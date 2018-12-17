@@ -1,3 +1,9 @@
+block_input = document.querySelector("#listTb-0");
+//block_input.classList.remove("empty");
+block_input.focus();
+block_input.select();
+block_input.click();
+
 httpRequestBlock = new XMLHttpRequest();
 
 httpRequestBlock.onreadystatechange = function(){
@@ -20,7 +26,6 @@ httpRequestBlock.onreadystatechange = function(){
 
 httpRequestBlock.open('GET', 'https://raw.githubusercontent.com/ZenMittal/K9-easy-configuration/master/block.js', true);
 httpRequestBlock.send();
-
 
 
 
